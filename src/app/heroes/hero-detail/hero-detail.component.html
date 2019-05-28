@@ -1,0 +1,23 @@
+<div class="container" *ngIf="hero !== undefined">
+  <div class="row">
+    <h2 class="col-sm-12">{{hero.name | uppercase}} Details</h2>
+  </div>
+  <div class="row align-content-start">
+    <div class="col-sm-2">
+      <span>id: </span>
+    </div>
+    <div class="col-sm-6"><b>{{hero.id}}</b></div>
+  </div>
+  <div class="row align-content-start">
+    <div class="col-sm-2">
+      <label>name:</label>
+    </div>
+    <div class="col-sm-6">
+      <input [(ngModel)]="hero.name" placeholder="name"/>
+    </div>
+  </div>
+
+
+  <button (click)="goBack()" class="btn btn-info">Back</button>
+</div>
+
