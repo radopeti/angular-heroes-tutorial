@@ -1,11 +1,13 @@
 <div class="container">
-  <div class="row">
-    <a class="col-sm-2"
+  <div class="row m-2">
+    <div class="col-sm-2"
          *ngFor="let hero of heroes"
          style="background: #DDDDDD;
          margin-right: 1px;
          height: 45px;" routerLink="/detail/{{hero.id}}">
-      <span style="text-align: end">{{hero.name}}</span>
-    </a>
+      <a>
+        <span style="text-align: end">{{hero.name}}</span>
+      </a>
+    </div>
   </div>
 </div>
