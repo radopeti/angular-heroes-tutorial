@@ -21,4 +21,19 @@
     </div>
   </div>
 </div>
+<div class="container">
+  <div class="row justify-content-sm-start m-1">
+    <div class="col-sm-1">
+      <label>Heroname: </label>
+    </div>
+    <div class="col-sm-7 align-content-start">
+      <input #heroName>
+    </div>
+  </div>
+  <div class="row m-1">
+    <div class="col-sm-12">
+      <button class="btn btn-primary" (click)="add(heroName.value)">btn</button>
+    </div>
+  </div>
 
+</div>
